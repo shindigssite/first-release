@@ -1,0 +1,13 @@
+USF Schedules - I don't think that there's a database that houses this information. 
+
+UT Schedules
+
+Sun Dome Events
+
+Forum Events
+
+Ray Jay Events - All events are posted through Ticketmaster. Might has to look into hooking into TM for these events.
+
+City of Tampa - Already has RSS. Look into building a service that runs daily to add any new data.
+
+Straz Center - View Contact Us to contact VP of marketing. They have a calendar of events on their site, which indicates that there is a database of shows and times. I can offer to build a web service to expose (come up with a better word for a non-tech guy) the contents of the database without actually accessing the database. Potential increased revenue for Straz Center without any additional cost.

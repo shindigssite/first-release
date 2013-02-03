@@ -1,0 +1,15 @@
+USF Schedules - I don't think that there's a database that houses this information. Pretty sure that everything is entered manually.
+
+UT Schedules - Same as USF schedules. This information could be in a DB, but I don't expect it to be well designed.
+
+Sun Dome - I might be able to build a web service for this site.
+
+Forum - The technology for the Forum seems to be the same as the technology for the Sun Dome.
+
+Tropicana Field - Can't find any information specifically on the Trop. All information is for Rays Baseball. Pretty sure other events are held there.
+
+Ray Jay - All events are posted through Ticketmaster. Might has to look into hooking into TM for these events.
+
+City of Tampa - Already has RSS. Look into building a service that runs daily to add any new data.
+
+Straz Center - View Contact Us to contact VP of marketing. They have a calendar of events on their site, which indicates that there is a database of shows and times. I can offer to build a web service to expose (come up with a better word for a non-tech guy) the contents of the database without actually accessing the database. Potential increased revenue for Straz Center without any additional cost.
