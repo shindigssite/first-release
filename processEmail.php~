@@ -1,13 +1,19 @@
 <?php
-  $emailTo = 'shindigssite@gmail.com';
+  include 'dbConnection.php';
+
+  $id = time();
+
+  $query = 'INSERT INTO email (id, message, name, address) VALUES (' . $id . ', \'' . $_POST['Message'] . '\', \'' . $_POST['Name'] . '\', \'' . $_POST['Email'] . '\')';
+
+  mysql_query($query);
+  mysql_close($con);
+  header ("location:aboutUs.php");
+
+  /*$emailTo = 'shindigssite@gmail.com';
   $subjectLine = 'Message From ' . $_POST['Name'];
   $messageBody = 'Name: ' . $_POST['Name'] 
 		  . '\nEmail: ' . $_POST['Email']
 		  . '\nMessage: ' . $_POST['Message'];
   
-  mail($emailTo, $subjectLine, $messageBody);
-
-  if (true) {
-    header ("location:aboutUs.php");
-  }
+  mail($emailTo, $subjectLine, $messageBody);*/
 ?>
