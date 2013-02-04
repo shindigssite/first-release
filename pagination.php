@@ -19,7 +19,13 @@
     $pageSize = $_GET['pageSize'];
   }
 
-  $result = mysql_query("SELECT count(*) as count FROM events WHERE startTime > '" . date('Y/m/d h:i:s', time()) . "'");
+  if ($_SESSION['eventListQuery'] == '') {
+    $result = mysql_query("SELECT count(*) as count FROM events WHERE startTime > '" . date('Y/m/d h:i:s', time()) . "'");
+  }
+  else {
+    $result = mysql_query("SELECT count(*) as count FROM events e WHERE " . $_SESSION['eventListQuery']);
+  }
+
   $row = mysql_fetch_array($result);
 
   //////// Filling out the pagination string ////////

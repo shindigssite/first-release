@@ -16,13 +16,13 @@
 </div>
 
 <div class="row">
-  <form>
+  <form action="processEmail.php" method="post">
     <label>Name</label>
-    <input type="text">
+    <input type="text" name="Name">
     <label>Email Address</label>
-    <input type="text">
+    <input type="text" name="Email">
     <label>Questions/Comments</label>
-    <textarea rows="5" style="width: 400px;"></textarea>
+    <textarea rows="5" style="width: 400px;" name="Message"></textarea>
     <br>
     <button type="submit" class="btn">Submit</button>
   </form>

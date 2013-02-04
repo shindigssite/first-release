@@ -34,7 +34,7 @@
     $query = "SELECT * FROM events WHERE startTime > '" . date('Y/m/d h:i:s', time()) . "' ORDER BY startTime ASC LIMIT " . ($pageNum-1)*$pageSize . ", " . $pageSize;
   }
   else {
-    $query = $_SESSION['eventListQuery'] . " ORDER BY startTime ASC LIMIT " . ($pageNum-1)*$pageSize . ", " . $pageSize;
+    $query = "SELECT * FROM events e WHERE " . $_SESSION['eventListQuery'] . " ORDER BY startTime ASC LIMIT " . ($pageNum-1)*$pageSize . ", " . $pageSize;
   }
 
   $result = mysql_query($query);

@@ -28,7 +28,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#"><img src="img/brand.png"/></a>
+        <a class="brand" href="eventList.php"><img src="img/brand.png"/></a>
         <!--<div class="nav-collapse">
           <ul class="nav">
             <li><a href="#"><strong>Home</strong></a></li>

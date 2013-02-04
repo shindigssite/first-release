@@ -28,20 +28,13 @@
 
 <?php
   include 'pagination.php';
-
-  //////// Database connection ////////
-  $con = mysql_connect("localhost", "root", "password");
-  if (!$con) {
-    die('Could not connect: ' . mysql_error());
-  }
-
-  mysql_select_db("shin-digs", $con);
+  include 'dbConnection.php';
 
   if ($_SESSION['eventListQuery'] == '') {
     $query = "SELECT * FROM events WHERE startTime > '" . date('Y/m/d h:i:s', time()) . "' ORDER BY startTime ASC LIMIT " . ($pageNum-1)*$pageSize . ", " . $pageSize;
   }
   else {
-    $query = $_SESSION['eventListQuery'] . " ORDER BY startTime ASC LIMIT " . ($pageNum-1)*$pageSize . ", " . $pageSize;
+    $query = "SELECT * FROM events e WHERE " . $_SESSION['eventListQuery'] . " ORDER BY startTime ASC LIMIT " . ($pageNum-1)*$pageSize . ", " . $pageSize;
   }
 
   $result = mysql_query($query);
