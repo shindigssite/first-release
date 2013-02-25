@@ -3,15 +3,16 @@
 
 <html>
 <head profile="http://www.w3.org/2005/10/profile">
-<title>Shin-Digs</title>
-<link href="css/bootstrap.css" rel="stylesheet">
+  <title>Shin-Digs</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/datepicker.css" rel="stylesheet">
+  <link href="css/bootstrap-timepicker.css" rel="stylesheet">
   <style type="text/css">
     body {
       padding-top: 50px;
       padding-bottom: 40px;
     }
   </style>
-  <link href="css/bootstrap-responsive.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="shortcut icon" href="../assets/ico/favicon.ico">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">

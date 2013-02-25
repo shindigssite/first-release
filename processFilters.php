@@ -16,7 +16,9 @@
     foreach ($_POST['category'] as $value) {
       if (!$firstItrFlag) {
 	$categoryStr = $categoryStr . ', ';
-        $firstItrStr = false;
+      }
+      else {
+	$firstItrFlag = false;
       }
       $categoryStr = $categoryStr . '\'' . $value . '\'';
     }
@@ -32,7 +34,9 @@
     foreach ($_POST['locale'] as $value) {
       if (!$firstItrFlag) {
 	$localeStr = $localeStr . ', ';
-        $firstItrStr = false;
+      }
+      else {
+	$firstItrFlag = false;
       }
       $localeStr = $localeStr . '\'' . $value . '\'';
     }
@@ -98,7 +102,7 @@
   else {
     $_SESSION['eventListQuery'] = '';
   }
-
+  //echo $_SESSION['eventListQuery'];
   header ("location:eventList.php");
   
 ?>

@@ -6,7 +6,7 @@
   <div class="span9 offset1" style="text-align:center"><img src="http://placehold.it/728x90"></img></div>
 </div>-->
 <div class="row">
-  <div class="span2 offset9">
+  <div class="span2 offset7">
     <form class="form-inline">
       <label>Results Per Page: </label>
       <select name="numEvents" onChange="Refresh(this.value)">
@@ -16,6 +16,11 @@
         <option value="50">50</option>
         <option value="75">75</option>
       </select>
+    </form>
+  </div>
+  <div class="span2">
+    <form class="form-inline" action="addEvent.php">
+      <button type="submit" class="btn">Add an Event</button>
     </form>
   </div>
 </div>
